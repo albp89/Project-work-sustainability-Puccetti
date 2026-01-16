@@ -7,17 +7,20 @@
   */
 
 :root{
-  --bg: #0f0f12;
-  --surface: #15151a;
-  --surface-2: #1b1b22;
-  --text: #f2f2f3;
-  --muted: #c8c8ce;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #ffffff;
+  --text: #1f1f1f;
+  --muted: #4b5563;
   --accent: #7f123b;   
   --accent-2: #b91c4f; 
-  --border: rgba(255,255,255,0.12);
-  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --border: rgba(0,0,0,0.12);
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
   --radius: 16px;
   --max: 1100px;
+
+  /* Offset per header */
+  --header-offset: 130px;
 }
 
 /* Reset leggero */
@@ -25,7 +28,7 @@
 html, body{ margin:0; padding:0; }
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: linear-gradient(180deg, var(--bg), #111116 60%, #0e0e12);
+  background: var(--bg);
   color: var(--text);
   line-height: 1.55;
 }
@@ -59,22 +62,21 @@ a:hover{ text-decoration: underline; }
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(15,15,18,0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.10);
 }
 .header-inner{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
-  padding: 14px 0;
+  gap: 24px;
+  padding: 18px 0;
 }
 .brand{
   display: flex;
   align-items: center;
   gap: 12px;
-  min-width: 240px;
+  min-width: auto;
 }
 .brand-mark{
   width: 40px;
@@ -83,9 +85,19 @@ a:hover{ text-decoration: underline; }
   background: radial-gradient(circle at 30% 30%, var(--accent-2), var(--accent));
   box-shadow: var(--shadow);
 }
+.brand-logo{
+  height: 96px;
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
+  display: block;
+}
 .brand-name{
-  font-weight: 750;
-  letter-spacing: 0.2px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #1f1f1f;
+  line-height: 1;
 }
 .brand-sub{
   font-size: 0.92rem;
@@ -150,7 +162,7 @@ a:hover{ text-decoration: underline; }
   padding: 44px 0;
 }
 .section.alt{
-  background: rgba(255,255,255,0.02);
+  background: #f9f9f9;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -232,7 +244,7 @@ h3{
 .kpi-table{
   width: 100%;
   border-collapse: collapse;
-  min-width: 640px; /* mantiene leggibilità */
+  min-width: 640px;
 }
 .kpi-table th, .kpi-table td{
   padding: 12px 14px;
@@ -260,12 +272,32 @@ h3{
   border-top: 1px solid var(--border);
   padding-top: 16px;
 }
+.footer-disclaimer{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 800px;
+}
 
 /* Focus visibile per accessibilità */
 :focus-visible{
   outline: 3px solid rgba(185, 28, 79, 0.7);
   outline-offset: 3px;
   border-radius: 10px;
+}
+
+/* Gestione scroll con header sticky */
+html{
+  scroll-padding-top: var(--header-offset);
+  scroll-behavior: smooth;
+}
+
+/* Offset ancore per sezioni principali */
+#chi-siamo,
+#sostenibilita,
+#kpi,
+#download{
+  scroll-margin-top: var(--header-offset);
 }
 
 /* Responsive */

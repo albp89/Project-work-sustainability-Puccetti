@@ -6,15 +6,15 @@
  <title>Collemattoni | Sostenibilità</title>
  
  <!--
-   Questa pagina è pensata come mini-sito per comunicare in modo chiaro
-   le attività di sostenibilità e permettere il download del Bilancio di Sostenibilità dell'azienda.
+    Pagina realizzata come mini-sito informativo per presentare in modo sintetico
+  i contenuti principali del Bilancio di Sostenibilità dell'azienda e consentirne il download.
  
-   Struttura (alto livello):
+   Struttura:
    - Header con navigazione ad ancore
    - Hero (messaggio chiave)
    - Sezione “Chi è Collemattoni” (contesto aziendale)
-   - KPI e “Pilastri” della sostenibilità (cards)
-   - Download report (link con attributo download)
+   - KPI e sostenibilità (cards)
+   - Download report
    - Footer
  
   -->
@@ -25,31 +25,25 @@
 <body>
  <!-- Skip link: accesso diretto al contenuto -->
  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+<header class="site-header light">
+  <div class="container header-inner">
+       <!-- Banner header con logo -->
+    
+    <div class="brand">
+      <img src="logo_azienda.png" alt="Collemattoni" class="brand-logo">
+         </div>
+    <!-- Navigazione -->
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#chi-siamo" class="active">Chi siamo</a>
+      <a href="#sostenibilita">Sostenibilità</a>
+      <a href="#kpi">Dati chiave</a>
+      <a href="#download">Download</a>
+    </nav>
+
+  </div>
+</header>
+
  
- <header class="site-header">
-   <div class="container header-inner">
-     <!-- Banner header con logo -->
-     <div class="header-banner" style="width:100%; margin-bottom:12px;">
-       <img src="logo_azienda.png" alt="Collemattoni – Bilancio di sostenibilità 2024" style="width:100%; height:auto; border-radius:16px; display:block;">
-     </div>
-     <div class="brand" style="gap:14px;">
-       <!-- Logo azienda con disclaimer -->
-       <img src="logo_azienda.png" alt="Collemattoni" style="height:44px;width:auto;display:block;">
-       <div class="brand-text">
-         <div class="brand-name">Collemattoni</div>
-         <div class="brand-sub">Bilancio di sostenibilità 2024</div>
-       </div>
-     </div>
- 
-     <!-- Navigazione -->
-     <nav class="nav" aria-label="Navigazione principale">
-       <a href="#chi-siamo">Chi siamo</a>
-       <a href="#sostenibilita">Sostenibilità</a>
-       <a href="#kpi">Dati chiave</a>
-       <a href="#download">Download</a>
-     </nav>
-   </div>
- </header>
  
  <main id="contenuto">
    <section class="hero">
@@ -250,12 +244,14 @@
    </section>
  </main>
  
- <footer class="site-footer">
-   <div class="container footer-inner">
-     <p>
-       
-     </p>
-   </div>
- </footer>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-disclaimer">
+      <strong>Disclaimer</strong><br>
+      I contenuti, i loghi e i marchi utilizzati in questo progetto sono riportati
+      esclusivamente a scopo didattico. Tutti i diritti appartengono ai rispettivi titolari.
+    </p>
+  </div>
+</footer>
 </body>
 </html>
