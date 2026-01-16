@@ -140,11 +140,12 @@ a:hover{ text-decoration: underline; }
   font-size: 1.05rem;
 }
 .hero-card{
-  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  background: #fff;
   border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   padding: 18px 18px 10px;
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 .hero-card .h3{
   margin: 0 0 10px;
@@ -188,11 +189,12 @@ h3{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .panel{
-  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  background: #fff;
   border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   padding: 16px;
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 .panel p{
   margin: 0;
@@ -204,11 +206,12 @@ h3{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .card{
-  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  background: #fff;
   border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   padding: 16px;
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 .card ul{
   margin: 0;
@@ -239,7 +242,7 @@ h3{
   overflow-x: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: rgba(0,0,0,0.18);
+  background: #fff;
 }
 .kpi-table{
   width: 100%;
@@ -252,8 +255,11 @@ h3{
   border-bottom: 1px solid var(--border);
 }
 .kpi-table thead th{
-  background: rgba(255,255,255,0.04);
+  background: #f3f4f6;
   font-weight: 700;
+}
+.kpi-table tbody tr:nth-child(even){
+  background: #fafafa;
 }
 .kpi-table tbody td{ color: var(--muted); }
 .note{
