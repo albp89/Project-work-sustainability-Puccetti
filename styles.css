@@ -1,0 +1,286 @@
+/*
+ File styles.css per la pagina del download del report sostenibilità dell'azienda "Collemattoni".
+  
+  - Layout pulito e leggero 
+  - Buona leggibilità 
+  - Accessibilità
+  */
+
+:root{
+  --bg: #0f0f12;
+  --surface: #15151a;
+  --surface-2: #1b1b22;
+  --text: #f2f2f3;
+  --muted: #c8c8ce;
+  --accent: #7f123b;   
+  --accent-2: #b91c4f; 
+  --border: rgba(255,255,255,0.12);
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --radius: 16px;
+  --max: 1100px;
+}
+
+/* Reset leggero */
+*{ box-sizing: border-box; }
+html, body{ margin:0; padding:0; }
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #111116 60%, #0e0e12);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* Contenitore centrale */
+.container{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Link */
+a{ color: inherit; text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+/* Skip link: visibile solo quando in focus */
+.skip-link{
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: #fff;
+  color: #000;
+  padding: 10px 12px;
+  border-radius: 10px;
+  z-index: 999;
+}
+.skip-link:focus{ left: 10px; }
+
+/* Header */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(15,15,18,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 0;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 240px;
+}
+.brand-mark{
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: radial-gradient(circle at 30% 30%, var(--accent-2), var(--accent));
+  box-shadow: var(--shadow);
+}
+.brand-name{
+  font-weight: 750;
+  letter-spacing: 0.2px;
+}
+.brand-sub{
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-end;
+}
+.nav a{
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.nav a:hover{
+  border-color: var(--border);
+  text-decoration: none;
+}
+
+/* Hero */
+.hero{
+  padding: 56px 0 32px;
+}
+.hero-inner{
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 24px;
+  align-items: start;
+}
+.hero h1{
+  margin: 0 0 12px;
+  font-size: clamp(1.9rem, 2.8vw, 3rem);
+  line-height: 1.1;
+}
+.hero p{
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+.hero-card{
+  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 18px 10px;
+  box-shadow: var(--shadow);
+}
+.hero-card .h3{
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+.hero-card ul{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+.hero-card li{ margin-bottom: 8px; }
+
+/* Sezioni */
+.section{
+  padding: 44px 0;
+}
+.section.alt{
+  background: rgba(255,255,255,0.02);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+h2{
+  margin: 0 0 10px;
+  font-size: 1.65rem;
+}
+h3{
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+.lead{
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+/* Pannelli e griglie */
+.grid{
+  display: grid;
+  gap: 16px;
+}
+.grid.two{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.panel{
+  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.panel p{
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Cards */
+.grid.cards{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.card{
+  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.card ul{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+.card li{ margin: 8px 0; }
+
+/* Pulsante */
+.btn{
+  display: inline-block;
+  background: linear-gradient(180deg, var(--accent-2), var(--accent));
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: var(--shadow);
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+.btn:hover{
+  text-decoration: none;
+  filter: brightness(1.05);
+}
+
+/* Tabella KPI */
+.table-wrap{
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.18);
+}
+.kpi-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px; /* mantiene leggibilità */
+}
+.kpi-table th, .kpi-table td{
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.kpi-table thead th{
+  background: rgba(255,255,255,0.04);
+  font-weight: 700;
+}
+.kpi-table tbody td{ color: var(--muted); }
+.note{
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.mt{ margin-top: 16px; }
+
+/* Footer */
+.site-footer{
+  padding: 26px 0 42px;
+  color: var(--muted);
+}
+.footer-inner{
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+/* Focus visibile per accessibilità */
+:focus-visible{
+  outline: 3px solid rgba(185, 28, 79, 0.7);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 880px){
+  .hero-inner{ grid-template-columns: 1fr; }
+  .grid.two{ grid-template-columns: 1fr; }
+  .grid.cards{ grid-template-columns: 1fr; }
+  .brand{ min-width: auto; }
+}
+
+/* Print styles */
+@media print{
+  body{ background: #fff; color: #000; }
+  .site-header, .skip-link{ display: none; }
+  .panel, .card, .hero-card{ box-shadow: none; }
+  .btn{ border: 1px solid #000; background: #fff; color: #000; }
+  a{ text-decoration: underline; }
+}

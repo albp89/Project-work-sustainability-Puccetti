@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="it">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Collemattoni | Sostenibilità</title>
+ 
+ <!--
+   Questa pagina è pensata come mini-sito per comunicare in modo chiaro
+   le attività di sostenibilità e permettere il download del Bilancio di Sostenibilità dell'azienda.
+ 
+   Struttura (alto livello):
+   - Header con navigazione ad ancore
+   - Hero (messaggio chiave)
+   - Sezione “Chi è Collemattoni” (contesto aziendale)
+   - KPI e “Pilastri” della sostenibilità (cards)
+   - Download report (link con attributo download)
+   - Footer
+ 
+  -->
+ 
+ <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+ <!-- Skip link: accesso diretto al contenuto -->
+ <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+ 
+ <header class="site-header">
+   <div class="container header-inner">
+     <!-- Banner header con logo -->
+     <div class="header-banner" style="width:100%; margin-bottom:12px;">
+       <img src="logo_azienda.png" alt="Collemattoni – Bilancio di sostenibilità 2024" style="width:100%; height:auto; border-radius:16px; display:block;">
+     </div>
+     <div class="brand" style="gap:14px;">
+       <!-- Logo azienda con disclaimer -->
+       <img src="logo_azienda.png" alt="Collemattoni" style="height:44px;width:auto;display:block;">
+       <div class="brand-text">
+         <div class="brand-name">Collemattoni</div>
+         <div class="brand-sub">Bilancio di sostenibilità 2024</div>
+       </div>
+     </div>
+ 
+     <!-- Navigazione -->
+     <nav class="nav" aria-label="Navigazione principale">
+       <a href="#chi-siamo">Chi siamo</a>
+       <a href="#sostenibilita">Sostenibilità</a>
+       <a href="#kpi">Dati chiave</a>
+       <a href="#download">Download</a>
+     </nav>
+   </div>
+ </header>
+ 
+ <main id="contenuto">
+   <section class="hero">
+     <div class="container hero-inner">
+       <div class="hero-copy">
+         <h1>Un percorso di sostenibilità radicato nel territorio di Montalcino</h1>
+         <p>
+           Collemattoni integra pratiche agricole biologiche, autoproduzione di energia rinnovabile
+           e tutela delle risorse naturali lungo tutta la filiera, dalla vigna alla cantina.
+         </p>
+ 
+         <!--
+           Bottone-ancora: porta l’utente alla sezione download.
+           Trattasi di un normale link stilizzato come pulsante.
+         -->
+         <a class="btn" href="#download">Scarica il report</a>
+       </div>
+ 
+       <!-- Box informativo -->
+       <aside class="hero-card" aria-label="Messaggio chiave">
+         <h2 class="h3">In sintesi</h2>
+         <ul>
+           <li>Viticoltura biologica certificata.</li>
+           <li>Fino all’80% del fabbisogno energetico coperto da rinnovabili.</li>
+           <li>Primo anno di calcolo emissioni Scope 1 e Scope 2.</li>
+           <li>Approccio circolare su biomassa, acqua e rifiuti.</li>
+         </ul>
+       </aside>
+     </div>
+   </section>
+ 
+   <section id="chi-siamo" class="section">
+     <div class="container">
+       <h2>Chi è Collemattoni</h2>
+       <p>
+         Collemattoni è un’azienda agricola vitivinicola situata nel versante sud del comune di Montalcino,
+         vicino al borgo di Sant’Angelo in Colle. La gestione è familiare e unisce tradizione enologica
+         e innovazione tecnologica. I vigneti coprono circa 13 ettari, distribuiti in diverse aree con
+         caratteristiche pedoclimatiche specifiche.
+       </p>
+ 
+       <div class="grid two">
+         <div class="panel">
+           <h3>Catena del valore</h3>
+           <p>
+             Le uve provengono esclusivamente dai vigneti aziendali. La vinificazione e l’affinamento
+             avvengono in cantina, con controllo delle fasi produttive e cura dell’invecchiamento.
+             La commercializzazione è gestita direttamente, con una quota significativa di export.
+           </p>
+         </div>
+ 
+         <div class="panel">
+           <h3>Approccio alla sostenibilità</h3>
+           <p>
+             Nel 2024 Collemattoni pubblica il suo primo Bilancio di Sostenibilità, redatto su base volontaria,
+             con l’obiettivo di rendere trasparente il percorso di miglioramento e definire priorità basate
+             su un’analisi di materialità interna.
+           </p>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <section id="sostenibilita" class="section alt">
+     <div class="container">
+       <h2>Le attività di sostenibilità</h2>
+       <p class="lead">
+         Le iniziative sono organizzate in quattro aree: prodotti e qualità, persone, ambiente, filiera e comunità.
+       </p>
+ 
+       <!-- Sezione cards -->
+       <div class="grid cards">
+         <article class="card">
+           <h3>Prodotti e trasparenza</h3>
+           <ul>
+             <li>Etichettatura conforme e informazioni chiare al consumatore.</li>
+             <li>Certificazione biologica.</li>
+             <li>Controlli di qualità e tracciabilità lungo il ciclo produttivo.</li>
+             <li>Formazione del personale su buone pratiche di sicurezza alimentare.</li>
+           </ul>
+         </article>
+ 
+         <article class="card">
+           <h3>Persone</h3>
+           <ul>
+             <li>Ambiente di lavoro collaborativo e attenzione al benessere.</li>
+             <li>Visite mediche periodiche e corsi obbligatori sulla sicurezza.</li>
+             <li>Formazione tecnica e aggiornamenti normativi.</li>
+             <li>Nessun infortunio registrato nel 2024.</li>
+           </ul>
+         </article>
+ 
+         <article class="card">
+           <h3>Ambiente</h3>
+           <ul>
+             <li>Impianto fotovoltaico (14,6 kW), biomassa (30 kW) e solare termico.</li>
+             <li>Monitoraggio consumi energetici ed emissioni (Scope 1 e Scope 2).</li>
+             <li>Gestione idrica: acquedotto + pozzo + raccolta acqua piovana.</li>
+             <li>Depuratore aerobico per trattamento acque reflue di cantina.</li>
+             <li>Compostaggio e raccolta differenziata, attenzione al packaging.</li>
+             <li>Gestione del suolo: copertura permanente e minima lavorazione.</li>
+           </ul>
+         </article>
+ 
+         <article class="card">
+           <h3>Fornitori e comunità</h3>
+           <ul>
+             <li>Acquisti con preferenza per fornitori locali e regionali.</li>
+             <li>Sostegno ad associazioni culturali e realtà del territorio.</li>
+             <li>Partecipazione a iniziative di innovazione agroalimentare.</li>
+           </ul>
+         </article>
+       </div>
+     </div>
+   </section>
+ 
+   <section id="kpi" class="section">
+     <div class="container">
+       <h2>Dati chiave 2024</h2>
+       <p class="lead">
+         Alcuni indicatori selezionati dal Bilancio di Sostenibilità 2024.
+       </p>
+ 
+       <!-- Tabella KPI  -->
+       <div class="table-wrap" role="region" aria-label="Tabella dati chiave" tabindex="0">
+         <table class="kpi-table">
+           <thead>
+             <tr>
+               <th>Area</th>
+               <th>Indicatore</th>
+               <th>Valore 2024</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Energia</td>
+               <td>Copertura fabbisogno da rinnovabili</td>
+               <td>Fino all’80%</td>
+             </tr>
+             <tr>
+               <td>Energia</td>
+               <td>Fotovoltaico installato</td>
+               <td>14,6 kW</td>
+             </tr>
+             <tr>
+               <td>Energia</td>
+               <td>Impianto a biomassa</td>
+               <td>30 kW</td>
+             </tr>
+             <tr>
+               <td>Clima</td>
+               <td>Emissioni Scope 1</td>
+               <td>16,1 tCO2e</td>
+             </tr>
+             <tr>
+               <td>Clima</td>
+               <td>Emissioni Scope 2</td>
+               <td>1,95 tCO2e</td>
+             </tr>
+             <tr>
+               <td>Acqua</td>
+               <td>Prelievi da acquedotto</td>
+               <td>192 m³</td>
+             </tr>
+             <tr>
+               <td>Rifiuti</td>
+               <td>Rifiuti totali prodotti</td>
+               <td>800 kg</td>
+             </tr>
+             <tr>
+               <td>Persone</td>
+               <td>Dipendenti (oltre al proprietario)</td>
+               <td>6</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+ 
+       <p class="note">
+         Nota: i valori sono riportati a titolo divulgativo e derivano dal Bilancio di Sostenibilità 2024.
+         Per dettagli metodologici e perimetro di rendicontazione, consultare il documento integrale.
+       </p>
+     </div>
+   </section>
+ 
+   <section id="download" class="section alt">
+     <div class="container">
+       <h2>Download Report di Sostenibilità</h2>
+       <p>
+         Se il file PDF è presente nella stessa cartella della pagina, il link qui sotto avvierà il download.
+       </p>
+ 
+       <!-- Download PDF -->
+       <a class="btn" href="https://api.sienafoodlab.clienti.dinamocloud.com/uploads/2025/9/19/1758288297870_report_collemattoni_def.pdf" target="_blank" rel="noopener">
+         Apri / Scarica Bilancio di sostenibilità 2024
+       </a>
+      </div>
+   </section>
+ </main>
+ 
+ <footer class="site-footer">
+   <div class="container footer-inner">
+     <p>
+       
+     </p>
+   </div>
+ </footer>
+</body>
+</html>
