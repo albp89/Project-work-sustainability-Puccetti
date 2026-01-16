@@ -1,11 +1,7 @@
-/*
- File styles.css per la pagina del download del report sostenibilità dell'azienda "Collemattoni".
-  
-  - Layout pulito e leggero 
-  - Buona leggibilità 
-  - Accessibilità
-  */
+/* File styles.css per la pagina del download del report sostenibilità dell'azienda "Collemattoni".*/
 
+
+/*Variabili di progetto: palette + spaziature comuni*/
 :root{
   --bg: #ffffff;
   --surface: #ffffff;
@@ -19,8 +15,8 @@
   --radius: 16px;
   --max: 1100px;
 
-  /* Offset per header */
-  --header-offset: 130px;
+  /* Offset per header per evitare che l'header copra l'inizio delle sezioni*/
+  --header-offset: 132px;
 }
 
 /* Reset leggero */

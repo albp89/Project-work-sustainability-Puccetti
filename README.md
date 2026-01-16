@@ -24,5 +24,5 @@ Il sito può essere visualizzato:
   https://albp89.github.io/Project-work-sustainability-Puccetti/
 
 ## Disclaimer
-I contenuti, i loghi e i marchi utilizzati in questo progetto sono riportati
-esclusivamente a scopo didattico. Tutti i diritti appartengono ai rispettivi titolari.
+I contenuti, i loghi e i marchi presenti in questo progetto sono utilizzati esclusivamente a scopo didattico. 
+Tutti i diritti rimangono di proprietà dei rispettivi titolari.
